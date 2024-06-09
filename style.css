@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+body {
+    background-color: #2E4057; /* Dark blue-gray background */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Updated font */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #F1F1F1; /* Light text color for better contrast */
+}
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    font-size: 8vmin;
+    color: #F1F1F1; 
+    background-color: #1B998B; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+.box:hover {
+    background-color: #2D6A6F; 
+    transform: scale(1.05); 
+}
+#reset, #newreset {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #C14953; 
+    color: #F1F1F1;
+    border-radius: 1rem;
+    border: none;
+    margin: 1rem; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+#reset:hover, #newreset:hover {
+    background-color: #A12C37; 
+    transform: scale(1.05); 
+}
+.msg {
+    color: #F1F1F1;
+    font-size: 8vmin;
+    margin: 1rem 0; 
+}
+.msgco {
+    height: 30vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    display: none;
+}
+
+
+
